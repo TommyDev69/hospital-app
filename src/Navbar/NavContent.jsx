@@ -1,18 +1,18 @@
 const NavContent = ({navLink, navLinks}) => {
     return ( 
-        <div className=" min-w-full  text-[24px] px-24 justify-between flex py-24 text-[#ccc]   " >
-            <ul className="">
+        <div className=" hidden min-w-full text-[24px]   md:text-[20px] lg:text-[26px] px-4  md:justify-between items-center md:flex py-24 text-[#ccc]   w-full" >
+            <ul className="flex ">
              {navLink}
             </ul>
 
-        <div className="mr-40 w-[2g0%]">
+          <div className=" w-[2g0%] mr-[i60px]">
 
-            <ul className="">
+            <ul className="lg flex hirdden">
 
              {navLinks}
             </ul>
         </div>
-            
+        
             
         </div>
      );

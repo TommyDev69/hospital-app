@@ -4,7 +4,7 @@ import NavContent from "./NavContent";
 import NavTop from "./NavTop";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser ,faInfoCircle} from '@fortawesome/free-solid-svg-icons'
+import { faUser ,faInfoCircle, faList} from '@fortawesome/free-solid-svg-icons'
 
 
 // import { icon } from "@fortawesome/fontawesome-svg-core";
@@ -19,7 +19,7 @@ function Navbar() {
     { id: 3, Name: "Contact us" },
     { id: 4, Name: "Treatment" },
     { id: 5, Name: "Doctors" },
-    { id: 6, Name: "Blogs" },
+    // { id: 6, Name: "Blogs" },
     { id: 7, Name: "Login", icon : faUser },
     { id: 8, Name: "Sign up", icon : faInfoCircle},
     // {id:9, Name:'', icon:faTShirt}
@@ -38,17 +38,20 @@ function Navbar() {
   ));
 
   const authList = authItems.map(item => (
-    <li className="text-[20px] px-6  inline text-[#ccc] " key={item.id}>
+    <li className="text-[24px] px-6  flex items-center text-[#ccc] " key={item.id}>
       {item.icon && <FontAwesomeIcon icon={item.icon} className="texvt-[1rem] px-2 mgr-4" />}
       {item.Name}
     </li>
   ));
 
   return (
-    <div className="image py-24">
-      <h1 className="text-4xl font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
-
-      <NavContent navLink = {topList} navLinks={authList}/>
+    <div className="image py-24  ">
+     <div className="flex md:block  justify-between items-center w-full md:pl-20 px-20">
+       <h1 className="text-4xl font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
+       <NavContent navLink = {topList} navLinks={authList}/>
+       <FontAwesomeIcon icon={faList} className=" md:hidden bg-white p-4 block text-[24px]" />
+      </div>
+    
       <NavTop />
 
     </div>

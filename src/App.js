@@ -1,4 +1,5 @@
 
+import AboutUs from './About Us/AboutUs';
 import './App.css';
 
 import TopNav from './FirstNavbar/TopNav';
@@ -12,7 +13,7 @@ function App() {
      <TopNav />
      <Navbar />
      <BookingCard  />
-{/* <Info /> */}
+<AboutUs />
     </div>
   );
 }

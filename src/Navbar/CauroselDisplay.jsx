@@ -7,7 +7,7 @@ const CauroselDisplay = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
-    { backgroundImage: 'url(image1.jpg)' },
+    { backgroundImage: 'url(./ image1.jpg)' },
     { backgroundImage: 'url(image2.jpg)' },
     { backgroundImage: 'url(image3.jpg)' },
   ];

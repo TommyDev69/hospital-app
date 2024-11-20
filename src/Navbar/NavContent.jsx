@@ -5,9 +5,9 @@ const NavContent = ({navLink, navLinks}) => {
              {navLink}
             </ul>
 
-          <div className=" w-[2g0%] mr-[i60px]">
+          <div>
 
-            <ul className="lg flex hirdden">
+            <ul className="lg flex hirdden pb-10">
 
              {navLinks}
             </ul>

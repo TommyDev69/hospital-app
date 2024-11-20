@@ -26,10 +26,10 @@ const SelectForm = ({selectValue}) => {
       numb = "";
     }
 
-    console.log("Generated appointment number:", numb); // Debugging line
+    
 
     setAppointmentNumber(numb);
-    console.log(numb);
+    
   };
 
     return ( 

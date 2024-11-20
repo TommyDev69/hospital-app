@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "doctor_name" : "Dr Linux", 
+        "dept":"Medicine and Surgies",
+        "about": "He is hardworking and qualified",
+        "image": "../images/img-3.png"
+    },
+
+    {
+        "id": 2,
+        "doctor_name" : "Dr cruffy", 
+        "dept":"Microbiogy and anatomy",
+        "about": "He is hardworking and qualified",
+        "image": "../images/img-2.png"
+    },
+
+    {
+        "id": 3,
+        "doctor_name" : "Pham plutonian", 
+        "dept":"Pharmacy",
+        "about": "He is hardworking and qualified",
+        "image": "../images/img-1.png"
+    }
+]

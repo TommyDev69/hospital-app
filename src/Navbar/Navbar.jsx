@@ -14,7 +14,7 @@ function Navbar() {
   let Title = "LINUX APP";
 
   const data = [
-    { id: 1, Name: "Home", url:'/' },
+    { id: 1, Name: "Home", url:'/'},
     { id: 2, Name: "About" },
     { id: 3, Name: "Contact us" },
     { id: 4, Name: "Treatment" },

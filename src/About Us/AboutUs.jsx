@@ -20,7 +20,7 @@ console.log(about[1]);
 
              <div className="md:py-0 py-[30px] mx-aubto">
                
-                <img src={img} alt="" className="min-w-[80%] md:w-1/2 mx-aujto" />
+                <img src={img} alt="" className="min-w-[80%] md:w-1/2 px-20 md:px-0" />
                
             </div>
         </div>

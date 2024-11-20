@@ -1,51 +1,12 @@
-import React, { useState } from "react";
-
 import { faPhone, faUser, faCalendar, faHospital} from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SelectForm from "./SelectForm";
+// import Receipt from "./Receipt";
 
-const Form = () => {
+const Form = ({handleSubmit, handForm, title}) => {
 
-  const [title, setTitle] = useState({
-    name: "",
-    phone: "",
-    address: '',
-    calender : '',
-    diagnosed:""
-  });
-
-  const handForm = (e) => {
-    const { name, phone, calender, address, diagnosed, value } = e.target;
-    // const {phone, value} = e.target
-
-   setTitle({
-      [name] : value,
-      [phone] : value,
-      [calender] : value,
-      [address] : value,
-      [diagnosed] : value
-    });
-
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the form from submitting by default
-
-    // Destructure the values from the title state
-    const { name, phone, calendar, address, diagnosed } = title;
   
-    // Check if any of the fields are empty
-    if (name === '' || phone === '' || calendar === '' || address === '' || diagnosed === '') {
-      // If any field is empty, show an error message or handle the error
-     alert('Please fill in all fields');
-      return; // Stop the function here and prevent the form from being submitted
-    }
-  
-    // If all fields are valid, proceed with form submission logic
-    alert('Form submitted with values:', { name, phone, calendar, address, diagnosed });
-  
-    // Optionally, you can now send the data to an API or reset the form
-  };
   return (
     <form onSubmit={handleSubmit} >
       <div>
@@ -113,7 +74,7 @@ const Form = () => {
       </div>
 
      <div className="pb-6">
-        <button type="submit"  className="border-2 mx-[47%] rounded-lg  border-[#0cb7d6] px-6 py-2 text-2xl font-[500] hover:bg-[#0cb7d6] hover:text-white">submit</button>
+        <button type="submit"   className="border-2 mx-[47%] rounded-lg  border-[#0cb7d6] px-6 py-2 text-2xl font-[500] hover:bg-[#0cb7d6] hover:text-white" >submit</button>
      
      </div>
     </form>

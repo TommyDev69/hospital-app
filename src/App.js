@@ -1,15 +1,16 @@
 
 import AboutUs from './About Us/AboutUs';
 import './App.css';
+import FormModule from './CountryApi_Form/FormModule';
 import Doctors from './Doctors_Profile/Doctors';
 
 import TopNav from './FirstNavbar/TopNav';
-import Info from './Information/Info';
-import CauroselDisplay from './Navbar/CauroselDisplay';
+
 import BookingCard from './Navbar/formBooking/BookingCard';
-import Receipt from './Navbar/formBooking/Receipt';
+
 import Navbar from './Navbar/Navbar';
 import MainSection from './Teatment/MainSection';
+import Patient from './Testmonies/Patient';
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
 <AboutUs />
 {/* <Receipt /> */}
 <MainSection />
-<Doctors />
-
+<Doctors /> 
+<Patient />
+<FormModule />
+{/* <FormModules /> */}
     </div>
   );
 }

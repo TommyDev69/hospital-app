@@ -1,0 +1,63 @@
+{
+    "status": "success",
+    "message": "Patient testimonies fetched successfully",
+    "data": [
+      {
+        "id": 1,
+        "patient_name": "John Doe",
+        "age": 45,
+       "condition": "Chronic Back Pain",
+      "testimony": "I was suffering from chronic back pain for years, and I thought I would never get better. But after seeing Dr. Harris, everything changed. She listened to my concerns and tailored a treatment plan specifically for me. Over time, my pain decreased, and I could finally enjoy life again. I feel healthier, more active, and happier. I'm so grateful for her expertise and the genuine care she showed me.",
+        "date": "2024-11-20",
+        "location": "New York, USA"
+      },
+      {
+        "id": 2,
+        "patient_name": "Jane Smith",
+        "age": 78,
+       "condition": "Cancer",
+      "testimony": "When I was diagnosed with cancer, I was overwhelmed with fear and anxiety. Dr. Patel was not only knowledgeable but also incredibly kind. He took the time to explain my options and reassured me every step of the way. His encouragement gave me the strength to face my treatment. Today, I’m in remission, and I feel more confident about my future. I’m forever grateful for how he made me feel cared for as a person, not just as a patient.",
+        "date": "2024-11-18",
+        "location": "Los Angeles, USA"
+      },
+      {
+        "id": 3,
+        "patient_name": "Carlos Mendez",
+        "age":90,
+        "condition": "General Health Issues",
+      "testimony": "I had seen several doctors before, but none took the time to truly listen to my concerns until I met Dr. Ramirez. She asked detailed questions and made sure I understood my diagnosis and treatment options. Thanks to her approach, I felt empowered to make decisions about my health. I am so much better now, both physically and mentally. It's amazing how much a doctor who listens can make a difference.",
+        "date": "2024-11-10",
+        "location": "Miami, USA"
+      },
+
+      {
+        "id": 4,
+        "patient_name": "jone crewn",
+        "age": 60,
+       "condition": "Low Energy and Stress",
+      "testimony": "When I first started seeing Dr. Thompson, I had low energy, frequent headaches, and was dealing with stress. She took a holistic approach to my health, addressing not just the symptoms but also my lifestyle. Now, after following her advice and treatment plan, I feel like a completely new person. I’m more energetic, happier, and able to focus better at work. I can’t thank her enough for helping me turn my health around.",
+        "date": "2024-09-10",
+        "location": "florida, USA"
+      },
+      {
+        "id": 5,
+        "patient_name": "Evelyn Mendwell",
+        "age": 50,
+        "condition": "Post-Surgery Recovery",
+        "testimony": "After my surgery, I was in a lot of pain and struggling emotionally. Dr. Lee not only treated my physical condition but also checked in on my mental health. His approach was always empathetic and patient. Thanks to his care, I not only healed physically but also regained my confidence and peace of mind. I am in a much better place now, and it’s all because of the support I received.",
+        "date": "2024-06-06",
+        "location": "oakland, USA"
+      },
+
+      {
+        "id": 5,
+        "patient_name": "Madmarine joelliton",
+        "age": 70,
+        "condition": "General Health Maintenance",
+      "testimony": "I've been seeing Dr. Nguyen for my annual check-ups for the last few years. He’s been instrumental in catching some early signs of health problems that could have been much worse if ignored. Thanks to his proactive approach, I’m healthier than I’ve ever been. He always takes the time to explain things in a way that makes me feel informed and involved in my health. I appreciate how well he takes care of me.",
+        "date": "2024-04-07",
+        "location": "Colorado, USA"
+      }
+    ]
+  }
+  

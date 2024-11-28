@@ -29,8 +29,8 @@ function App() {
      <AboutUs />
 
 <MainSection />
-<Doctors /> 
-<Patient />
+{/* <Doctors />  */}
+{/* <Patient /> */}
 {/* <FormOperate /> */}
 {/* <Weather /> */}
 {/* <FormModules /> */}

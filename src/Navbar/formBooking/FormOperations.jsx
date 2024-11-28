@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 
-const FormOperations = ({onSubmit}) => {
+const FormOperations = () => {
     
     const [title, setTitle] = useState({
         name: "",

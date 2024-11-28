@@ -30,24 +30,24 @@ function Navbar() {
   const authItems = Nav.filter(item => item.id === 7 || item.id === 8);
 
   const topList = topItems.map(item => (
-    <li className="inline   px-6" key={item.id}>
-      {item.icon && <FontAwesomeIcon icon={item.icon} className="text-[1rem] mgr-4" />}
+    <li className="inline  px-4 md:px-4 lg:px-10" key={item.id}>
+      {item.icon && <FontAwesomeIcon icon={item.icon} />}
       {item.Name}
     </li>
    
   ));
 
   const authList = authItems.map(item => (
-    <li className="text-[24px] px-6  flex items-center text-[#ccc] " key={item.id}>
-      {item.icon && <FontAwesomeIcon icon={item.icon} className="texvt-[1rem] px-2 mgr-4" />}
+    <li className="text-[#ccc] " key={item.id}>
+      {item.icon && <FontAwesomeIcon icon={item.icon} className="px-4" />}
       {item.Name}
     </li>
   ));
 
   return (
     <div className="image py-24  ">
-     <div className="flex md:block  justify-between items-center w-full md:pl-20 px-20">
-       <h1 className="text-4xl font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
+     <div className="flex md:block  justify-between items-center w-full md:pl-20 md:px-20 px-10">
+       <h1 className="md:text-[50px] text-4xl  font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
        <NavContent navLink = {topList} navLinks={authList}/>
        <FontAwesomeIcon icon={faList} className=" md:hidden bg-white p-4 block text-[24px]" />
       </div>

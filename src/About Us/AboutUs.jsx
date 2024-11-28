@@ -7,8 +7,8 @@ let aboutResult =about.filter(aboutUs => aboutUs === 'about hospital')
 console.log(about[1]);
 
     return ( 
-        <div className="grid md:grid-cols-2 px-gauto min-w-full">
-            <div className="   w-[90%]  pl-20 mx-ahuto">
+        <div className="grid md:grid-cols-2 px-gauto min-w-full bg-fuchsia-600 container-fluid py-[90px]  ">
+            <div className="   w-[90%]  pl-20 ">
                 <h1 className="capitalize text-[40px] font-[500] text-[Poppins, sans-serif] font-[Poppins, sans-serif] ">{aboutResult[0]}</h1>
                 <p className="leading-6 w-[90%]  text-md text-left pt-[30px] "> 
                 An E-Hospital is a healthcare facility that utilizes digital technologies and information systems
@@ -26,5 +26,5 @@ console.log(about[1]);
         </div>
      );
 }
- 
+
 export default AboutUs;

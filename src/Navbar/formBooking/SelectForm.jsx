@@ -35,15 +35,15 @@ const SelectForm = ({selectValue}) => {
     return ( 
         
         <div className="relative">
-        <div className="absolute left-10 text-2xl py-4">
+        <div className="absolute left-4 md:left-10 text-2xl py-4">
           <FontAwesomeIcon icon={faSortNumericAsc} />
         </div>
 
         <select
           onChange={formSelect}
-          className=" capitalize w-full text-2xl py-4 rounded-md pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "
+          className=" capitalize w-full text-2xl py-4 rounded-md pl-12 border-2 border-[#0cb7d6] focus:bg-gray-400 "
         >
-          <option className="capitalize">book doctor appointment </option>
+          <option className="capitalize text-2xl">book doctor appointment </option>
           {select.map((selectItem) => (
             <option key={selectItem.id} value={selectItem.doctor || ""}>
               {selectItem.doctor}

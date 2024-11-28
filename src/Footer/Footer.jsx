@@ -3,7 +3,7 @@ import FooterEmail from "./FooterEmail";
 
 const Footer = () => {
     return (  
-        <div className="bg-black py-8">
+        <div className="bg-black py-8 px-9">
             <FooterEmail />
             <FooterBody />
         </div>

@@ -1,17 +1,17 @@
 const NavContent = ({navLink, navLinks}) => {
     return ( 
-        <div className=" min-w-screen hidden md:flex md:items-center md:justify-between lg:pl-14 md:pl-0 pl-2 lg:text-[30px] md:text-[20px] text-[10px] text-[#ccc] py-36" >
-            <ul className="">
+        <div className=" min-w-screen hidden bg-fuchsia-8b00 md:flex md:items-center md:justify-around text-[24px] md:text-[19px]  lg:text-[28px] text-[#ccc] py-36" >
+            <ul className="ml-[-2 0px]">
              {navLink}
              {/* {navLinks} */}
 
             </ul>
 
-          <div className="ml-[-20px] bg-black">
+          <div className="">
 
             <ul className="  flex items-center">
 
-             {/* {navLinks} */}
+             {navLinks}
             </ul>
         </div>
         

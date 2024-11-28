@@ -30,7 +30,7 @@ function Navbar() {
   const authItems = Nav.filter(item => item.id === 7 || item.id === 8);
 
   const topList = topItems.map(item => (
-    <li className="inline  px-4 md:px-4 lg:px-10" key={item.id}>
+    <li className="inline  px-4 md:px-4" key={item.id}>
       {item.icon && <FontAwesomeIcon icon={item.icon} />}
       {item.Name}
     </li>

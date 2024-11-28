@@ -10,11 +10,11 @@ import linkedln from '../images/linkedin1-Photoroom.png'
 
 const FirstFooter = () => {
     return ( 
-        <div className="pl-28 lg:pl-36 md:pl-10">
+        <div className="pl-2 lg:pl-36  md:pl-10">
         
             <div className="flex items-center py-16">
-               <div className="bg-blue-500 w-16 md:w-10 lg:w-16  lg:h-16 md:h-10 h-16 rounded-full"></div>
-                <p className="font-bold uppercase text-[30px] text-white pl-4">address</p>
+               <div className="bg-blue-500 w-14 md:w-10 lg:w-16  lg:h-16 md:h-10 h-14 rounded-full"></div>
+                <p className="font-bold uppercase text-[28px] text-white pl-4">address</p>
             </div>
             <div className="flex items-center text-white">
                <FontAwesomeIcon icon={faLocation} className='text-[24px]' />
@@ -33,10 +33,10 @@ const FirstFooter = () => {
 
 
             <div className="flex items-center text-white pt-20">
-               <img src={facebook} alt="" className='w-24' />
-               <img src={instagram} alt="" className='w-24' />
-               <img src={twitter} alt="" className='w-24' />
-               <img src={linkedln} alt="" className='w-24'/>
+               <img src={facebook} alt="" className='md:w-20 w-16' />
+               <img src={instagram} alt="" className='md:w-20 w-16' />
+               <img src={twitter} alt="" className='md:w-20 w-16' />
+               <img src={linkedln} alt="" className='md:w-20 w-16'/>
             </div>
 
         </div>

@@ -9,7 +9,7 @@ const TopNav = () => {
     const Locate = 'ibadan, nigeria';
     
     return ( 
-        <div className="bg-[#0cb7d6] py-6 hidden md:flex justify-between items-center px-28 font-bold w-full ">
+        <div className="bg-[#0cb7d6] py-6 hidden md:flex justify-between items-center px-16 font-bold w-full ">
             <NavCallNumber Call = {phone} />
             <NavEmail Mail = {Email} />
             <NavLocation Location = {Locate} />

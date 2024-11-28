@@ -25,7 +25,7 @@ function App() {
     <div className="App ">
      <TopNav />
      <Navbar />
-     {/* <BookingCard  /> */}
+     <BookingCard  />
      {/* <AboutUs />
 
 <MainSection />

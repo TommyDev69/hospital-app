@@ -9,9 +9,9 @@ const NavContent = ({navLink, navLinks}) => {
 
           <div className="ml-[-20px] bg-black">
 
-            {/* <ul className="  flex items-center  "> */}
+            <ul className="  flex items-center  ">
 
-             {navLinks}
+             {/* {navLinks} */}
             </ul>
         </div>
         

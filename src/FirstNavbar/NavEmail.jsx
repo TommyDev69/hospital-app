@@ -4,7 +4,7 @@ const NavEmail = (props) => {
 const element = <FontAwesomeIcon icon={faEnvelope} />
 
     return ( 
-        <div className='flex items-center gap-4 hover:text-black cursor-pointer'>
+        <div className='flex items-center gap-2 hover:text-black cursor-pointer'>
         <p className=" text-white text-2xl">{element}</p>
         <p className=" text-white text-2xl">{props.Mail}</p>
     </div>

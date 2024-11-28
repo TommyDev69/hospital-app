@@ -26,8 +26,8 @@ function App() {
      <TopNav />
      <Navbar />
      <BookingCard  />
-<AboutUs />
-{/* <Receipt /> */}
+     <AboutUs />
+
 <MainSection />
 <Doctors /> 
 <Patient />

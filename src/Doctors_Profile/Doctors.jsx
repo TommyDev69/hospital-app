@@ -13,7 +13,7 @@ const Doctors = () => {
     { id: 3, image: image1 },
   ]);
 
-  const { Doctors: doctors, loading, error } = useFetch("http://localhost:8001/Data");
+  const { Doctors: doctors, loading, error } = useFetch("http://localhost:8003/Data");
 
   return (
     <div>

@@ -9,7 +9,7 @@ console.log(about[1]);
     return ( 
         <div className="grid md:grid-cols-2 px-gauto min-w-full container-fluid py-[90px]  ">
             <div className=" w-[90%]  pl-20 ">
-                <h1 className="capitalize text-[40px] font-[500] text-[Poppins, sans-serif] font-[Poppins, sans-serif] ">{aboutResult[0]}</h1>
+                <h1 className="capitalize text-[34px]  md:text-[45px] font-[500] text-[Poppins, sans-serif] font-[Poppins, sans-serif] ">{aboutResult[0]}</h1>
                 <p className="leading-snug w-[90%]  text-[20px] text-left pt-[30px] "> 
                 An E-Hospital is a healthcare facility that utilizes digital technologies and information systems
                  to manage and deliver medical services. The term "e-hospital" typically refers to an online platform 

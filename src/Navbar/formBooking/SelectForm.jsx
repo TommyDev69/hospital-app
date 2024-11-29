@@ -41,7 +41,7 @@ const SelectForm = ({selectValue}) => {
 
         <select
           onChange={formSelect}
-          className=" capitalize w-full text-2xl py-4 rounded-md pl-12 border-2 border-[#0cb7d6] focus:bg-gray-400 "
+          className=" capitalize w-full text-2xl py-4 rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "
         >
           <option className="capitalize text-2xl">book doctor appointment </option>
           {select.map((selectItem) => (

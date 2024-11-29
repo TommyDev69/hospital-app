@@ -1,4 +1,4 @@
-import { faPhone, faUser, faCalendar, faHospital} from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faUser, faHome, faHospital} from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SelectForm from "./SelectForm";
@@ -42,23 +42,21 @@ const Form = ({handleSubmit, handForm, title}) => {
             />
             </div>
 
-            <div className="relative bg -red-800">
-              <div className="absolute left-10 text-2xl py-4">
-                {/* <FontAwesomeIcon icon={faCalendar} /> */}
-              </div>
-            <input type="date" placeholder="date*" value={title.calender} onChange={handForm} className=" w-full  wr-[8t5%] text-2xl py-4 rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "/>
+            <div>
+              
+            <input type="date" placeholder="date*" value={title.calender} onChange={handForm} className=" w-full  text-2xl py-[11px] rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "/>
         </div>
       </div>
 
       <div className="grid min-w-full md:grid-cols-2 py-4 md:space-x-4 space-x-0 px-6">
         <div className="relative  pb-4 ">
-            <div className="absolute left-4 top-2 md:left-10 text-xl md:text-2xl py-4">
-                <FontAwesomeIcon icon={faUser} />
+            <div className="absolute left-4  md:left-10 text-xl md:text-2xl py-4">
+                <FontAwesomeIcon icon={faHome} />
             </div>
             <input
                 type="text"
                 placeholder="Home Address" value = {title.address} onChange={handForm}
-                className=" w-full   text-2xl py-4 rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400"
+                className=" w-full text-2xl py-4 rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400"
             />
             </div>
 
@@ -68,14 +66,14 @@ const Form = ({handleSubmit, handForm, title}) => {
             </div>
             <input
                 type="text" placeholder="Diagonised*" value={title.diagnosed} onChange={handForm}
-                className=" w-full   text-2xl py-4 rounded-md pl-12 pr-8 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400"
+                className=" w-full text-2xl py-4 rounded-md pl-12 pr-8 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400"
             />
         </div>
       </div>
       
 
      <div className="pb-4">
-        <button type="submit"   className="border-2 mx-[47%] rounded-lg  border-[#0cb7d6] px-6 py-2 text-2xl font-[500] hover:bg-[#0cb7d6] hover:text-white" >submit</button>
+        <button type="submit" className="border-2 mx-[47%] rounded-lg  border-[#0cb7d6] px-6 py-2 text-2xl font-[500] hover:bg-[#0cb7d6] hover:text-white" >submit</button>
      
      </div>
     </form>

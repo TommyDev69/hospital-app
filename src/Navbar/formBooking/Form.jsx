@@ -44,7 +44,7 @@ const Form = ({handleSubmit, handForm, title}) => {
 
             <div>
               
-            <input type="date" placeholder="date*" value={title.calender} onChange={handForm} className=" w-full  text-2xl py-[11px] rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "/>
+            <input type="date" placeholder="date*" value={title.calender} onChange={handForm} className=" w-full  text-2xl py-[12px] rounded-md pl-10 md:pl-20 border-2 border-[#0cb7d6] focus:bg-gray-400 "/>
         </div>
       </div>
 

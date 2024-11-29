@@ -19,7 +19,7 @@ const NavTop = () => {
 
     return ( 
         <div className="text-center ">
-            <h1 className="capitalize text-6xl font-bold text-[#ffffff] pb-8 pt-28">
+            <h1 className="capitalize md:text-6xl text-4xl font-bold text-[#ffffff] pb-8 pt-28">
                 we care of you
                 </h1>
                 <p className="text-xl w-1/2 mx-auto text-[#fff]">

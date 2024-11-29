@@ -26,16 +26,16 @@ function App() {
      <TopNav />
      <Navbar />
      <BookingCard  />
-     {/* <AboutUs />
+     <AboutUs />
 
 <MainSection />
 <Doctors /> 
-<Patient /> */}
+<Patient />
 {/* <FormOperate /> */}
 {/* <Weather /> */}
 {/* <FormModules /> */}
-  {/* <Main/>
-  <Footer /> */}
+  <Main/>
+  <Footer />
     </div>
   );
 }

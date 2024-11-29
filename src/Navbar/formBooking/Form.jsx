@@ -50,7 +50,7 @@ const Form = ({handleSubmit, handForm, title}) => {
 
       <div className="grid min-w-full md:grid-cols-2 py-4 md:space-x-4 space-x-0 px-6">
         <div className="relative  pb-4 ">
-            <div className="absolute left-4  md:left-10 text-xl md:text-2xl py-5">
+            <div className="absolute left-4  md:left-10 text-xl md:text-2xl py-4">
                 <FontAwesomeIcon icon={faHome} />
             </div>
             <input

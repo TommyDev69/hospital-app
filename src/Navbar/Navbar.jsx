@@ -45,7 +45,7 @@ function Navbar() {
   ));
 
   return (
-    <div className="image py-24  ">
+    <div className="image py-24   ">
      <div className="flex md:block  justify-between items-center w-full md:pl-20 md:px-20 px-10">
        <h1 className="md:text-[50px] text-4xl  font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
        <NavContent navLink = {topList} navLinks={authList}/>

@@ -8,11 +8,12 @@ background-image: url('../images/banner-bg.png');
 background-position: center right;
 
 
+
 }
 
 .navList{
     display: inline;
-    padding: 0 61px 0 0;
+    /* padding: 0 61hpx 0 0; */
     text-transform: capitalize;
     font-size:24px;
     color: #ccc;

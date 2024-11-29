@@ -19,11 +19,11 @@ const NavTop = () => {
 
     return ( 
         <div className="text-center ">
-            <h1 className="capitalize md:text-6xl text-4xl font-bold text-[#ffffff] pb-8 pt-28">
-                we care of you
+            <h1 className="capitalize md:text-6xl text-4xl w-full font-bold text-[#ffffff] pb-8 pt-28">
+                we care for you
                 </h1>
                 <p className="text-xl w-1/2 mx-auto text-[#fff]">
-                When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                     When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
                 </p>
                 <ButtonNav HandleButton = {HandleReadMore}  ClickMe = {ButonClick} />
                 </div>

@@ -10,24 +10,24 @@ function FormModule({Val, handleChange, countryApi}) {
         <div className=" min-w-full ">
             <div>
 
-                 <input type="text"  className="border-2 w-[80%] my-8 ml-[15%] px-20 py-8 text-[24px] rounded-3xl" name="names" value={Val.names} onChange={handleChange} placeholder="Full name(Surname Firstname Middlename)" />
+                 <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="names" value={Val.names} onChange={handleChange} placeholder="Full name(Surname Firstname Middlename)" />
             </div>
             <div>
 
-                <input type="text"  className="border-2 w-[80%] my-8 ml-[15%] px-20 py-8 text-[24px] rounded-3xl" name="phone" value={Val.phone} onChange={handleChange} placeholder="Phone-Number:(+country code)-Number" />
+                <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="phone" value={Val.phone} onChange={handleChange} placeholder="Phone-Number:(+country code)-Number" />
             </div>
             
            
            <div className="grid md:grid-cols-2  min-w-full mhl-[15%]">
             <div>
 
-                <select  className="border-2 w-[80%] md:w-[70%]  my-8 ml-[15%] md:ml-[30%]  px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
+                <select  className="border-2 w-[80%] md:w-[70%]  my-8 md:ml-[15%] ml-[10%] md:ml-[30%]  px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
                    <option value="">Choose state</option>
                 </select>
             </div>
 
             <div >
-                <select  className="border-2  my-8 w-[80%] md:w-[70%] md:ml-[20%] ml-[15%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
+                <select  className="border-2  my-8 w-[80%] md:w-[70%] md:ml-[20%] md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
                     <option value="" >Choose country</option>
                     {countryApi && countryApi.map((country,index) =>
 
@@ -39,18 +39,18 @@ function FormModule({Val, handleChange, countryApi}) {
             </div> 
             <div>
                 
-                 <input type="text"  className="border-2 w-[80%] my-8 ml-[15%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} placeholder="Valid Email" />
+                 <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} placeholder="Valid Email" />
             </div>
 
             <div>
                 
-               <textarea  className="border-2 w-[80%] min-h-[300px] my-8 ml-[15%] px-20 py-8 text-[24px] rounded-3xl" name="email" value={Val.email} onChange={handleChange} placeholder="Write message  of Testemony" />
+               <textarea  className="border-2 w-[80%] min-h-[300px] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="email" value={Val.email} onChange={handleChange} placeholder="Write message  of Testimony" />
             </div>
 
             {/* <br /> */}
             <div>
 
-                <button type="submit" className="bg-blue-800 text-[20px] text-white border-2 rounded-2xl  md:ml-[45%] ml-[25%] px-20 py-6 ">Submit</button>
+                <button type="submit" className="bg-blue-800 text-[20px] text-white border-2 rounded-2xl  md:ml-[45%] ml-[30%] px-20 py-6 ">Submit</button>
             </div>
         </div>
     </form>

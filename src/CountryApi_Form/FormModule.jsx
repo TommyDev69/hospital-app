@@ -50,7 +50,7 @@ function FormModule({Val, handleChange, countryApi}) {
             {/* <br /> */}
             <div>
 
-                <button type="submit" className="bg-blue-800 text-[20px] text-white border-2 rounded-2xl  ml-[45%] px-20 py-6 ">Submit</button>
+                <button type="submit" className="bg-blue-800 text-[20px] text-white border-2 rounded-2xl  md:ml-[45%] ml-[25%] px-20 py-6 ">Submit</button>
             </div>
         </div>
     </form>

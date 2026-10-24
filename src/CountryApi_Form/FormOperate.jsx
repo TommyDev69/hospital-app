@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import FormModule from '../CountryApi_Form/FormModule'
-import useFetch from './useFetch'
 
 function FormOperate() {
     // const {Countries:data,loading,error} = useFetch("https://https://restcountries.com/v3.1/all")

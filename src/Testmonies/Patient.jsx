@@ -11,22 +11,17 @@ const Patient = () => {
 
   const totalSlides = patient ? patient.length : 0;
 
-  // Function to go to the next slide
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides); // Loop back to the first slide
-  };
-
   // Autoplay logic with cleanup
   useEffect(() => {
     if (isPaused || totalSlides === 0) return; // If paused or no slides, do not start autoplay
 
     const interval = setInterval(() => {
-      nextSlide(); // Move to the next slide
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
     }, 3000); // Change slide every 3 seconds
 
     // Cleanup interval on component unmount or pause
     return () => clearInterval(interval);
-  }, [currentIndex, isPaused, totalSlides]);
+  }, [isPaused, totalSlides]);
 
   return (
     <div>

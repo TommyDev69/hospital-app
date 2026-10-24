@@ -1,5 +1,4 @@
 
-import FormOperations from "./FormOperations";
 import Receipt from "./Receipt";
 
 const BookingCard = () => {

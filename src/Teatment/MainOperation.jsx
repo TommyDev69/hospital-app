@@ -33,7 +33,7 @@ const MainOperation = () => {
         },
     ]
 
-    const [TreatContent, setTreatContent] = useState(data)
+    const [TreatContent] = useState(data)
 
     let nephro = TreatContent.filter(item => item.id === 1)
     let eyes = TreatContent.filter(item => item.id === 2)

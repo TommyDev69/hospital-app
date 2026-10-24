@@ -26,11 +26,12 @@ function Navbar() {
   ];
 
   const [Nav] = useState(data);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const topItems = Nav.filter(item => item.id >= 1 && item.id <= 6);
   const authItems = Nav.filter(item => item.id === 7 || item.id === 8);
 
   const topList = topItems.map(item => (
-    <li className="inline  px-4 md:px-4" key={item.id}>
+    <li className="px-4 py-2" key={item.id}>
       {item.icon && <FontAwesomeIcon icon={item.icon} />}
       {item.Name}
     </li>
@@ -38,18 +39,27 @@ function Navbar() {
   ));
 
   const authList = authItems.map(item => (
-    <li className="text-[#ccc] " key={item.id}>
+    <li className="px-4 py-2 text-[#ccc]" key={item.id}>
       {item.icon && <FontAwesomeIcon icon={item.icon} className="px-4" />}
       {item.Name}
     </li>
   ));
 
   return (
-    <div className="image py-24   ">
-     <div className="flex md:block  justify-between items-center w-full md:pl-20 md:px-20 px-10">
-       <h1 className="md:text-[50px] text-4xl  font-extrabold text-center text-[#0cb7d6]">{Title}</h1>
-       <NavContent navLink = {topList} navLinks={authList}/>
-       <FontAwesomeIcon icon={faList} className=" md:hidden bg-white p-4 block text-[24px]" />
+    <div className="image relative py-8 md:py-20">
+     <div className="relative z-20 flex w-full items-center justify-between px-5 md:block md:px-12 lg:px-20">
+       <h1 className="text-3xl font-extrabold text-center text-[#0cb7d6] md:text-[50px]">{Title}</h1>
+       <NavContent navLink={topList} navLinks={authList} isOpen={isMenuOpen} />
+       <button
+         type="button"
+         className="rounded bg-white p-3 text-2xl text-[#0cb7d6] md:hidden"
+         aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+         aria-expanded={isMenuOpen}
+         aria-controls="primary-navigation"
+         onClick={() => setIsMenuOpen((open) => !open)}
+       >
+         <FontAwesomeIcon icon={faList} />
+       </button>
       </div>
     
       <NavTop />

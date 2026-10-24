@@ -28,12 +28,11 @@ function App() {
      <BookingCard  />
      <AboutUs />
 
-<MainSection />
+{/* <MainSection /> */}
 <Doctors /> 
 <Patient />
-{/* <FormOperate /> */}
-{/* <Weather /> */}
-{/* <FormModules /> */}
+<FormOperate />
+
   <Main/>
   <Footer />
     </div>

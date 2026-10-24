@@ -72,8 +72,8 @@ const Form = ({handleSubmit, handForm, title}) => {
       </div>
       
 
-     <div className="pb-4">
-        <button type="submit" className="border-2 mx-[47%] rounded-lg  border-[#0cb7d6] px-6 py-2 text-2xl font-[500] hover:bg-[#0cb7d6] hover:text-white" >submit</button>
+      <div className="flex justify-center px-6 pb-4">
+        <button type="submit" className="rounded-lg border-2 border-[#0cb7d6] px-6 py-2 text-lg font-medium hover:bg-[#0cb7d6] hover:text-white sm:text-xl" >submit</button>
      
      </div>
     </form>

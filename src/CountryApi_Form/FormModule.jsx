@@ -10,24 +10,24 @@ function FormModule({Val, handleChange, countryApi}) {
         <div className=" min-w-full ">
             <div>
 
-                 <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="names" value={Val.names} onChange={handleChange} placeholder="Full name(Surname Firstname Middlename)" />
+                 <input type="text"  className="my-4 ml-[5%] w-[90%] min-w-0 rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[80%] md:text-xl" name="names" value={Val.names} onChange={handleChange} placeholder="Full name (Surname Firstname Middlename)" />
             </div>
             <div>
 
-                <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="phone" value={Val.phone} onChange={handleChange} placeholder="Phone-Number:(+country code)-Number" />
+                <input type="text"  className="my-4 ml-[5%] w-[90%] min-w-0 rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[80%] md:text-xl" name="phone" value={Val.phone} onChange={handleChange} placeholder="Phone number (+country code)" />
             </div>
             
            
            <div className="grid md:grid-cols-2  min-w-full mhl-[15%]">
             <div>
 
-                <select  className="border-2 w-[80%] md:w-[70%]  my-8 md:ml-[15%] ml-[10%] md:ml-[30%]  px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
+                <select  className="my-4 ml-[5%] w-[90%] min-w-0 rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[70%] md:text-xl" name="select" value={Val.select} onChange={handleChange} >
                    <option value="">Choose state</option>
                 </select>
             </div>
 
             <div >
-                <select  className="border-2  my-8 w-[80%] md:w-[70%] md:ml-[20%] md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} >
+                <select  className="my-4 ml-[5%] w-[90%] min-w-0 rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[70%] md:text-xl" name="select" value={Val.select} onChange={handleChange} >
                     <option value="" >Choose country</option>
                     {countryApi && countryApi.map((country,index) =>
 
@@ -39,18 +39,18 @@ function FormModule({Val, handleChange, countryApi}) {
             </div> 
             <div>
                 
-                 <input type="text"  className="border-2 w-[80%] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="select" value={Val.select} onChange={handleChange} placeholder="Valid Email" />
+                 <input type="email"  className="my-4 ml-[5%] w-[90%] min-w-0 rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[80%] md:text-xl" name="select" value={Val.select} onChange={handleChange} placeholder="Valid email" />
             </div>
 
             <div>
                 
-               <textarea  className="border-2 w-[80%] min-h-[300px] my-8 md:ml-[15%] ml-[10%] px-20 py-8 text-[24px] rounded-3xl" name="email" value={Val.email} onChange={handleChange} placeholder="Write message  of Testimony" />
+               <textarea  className="my-4 ml-[5%] min-h-48 w-[90%] min-w-0 resize-y rounded-xl border-2 px-4 py-4 text-base sm:my-6 sm:px-6 sm:py-5 sm:text-lg md:ml-[15%] md:w-[80%] md:text-xl" name="email" value={Val.email} onChange={handleChange} placeholder="Write your message" />
             </div>
 
             {/* <br /> */}
             <div>
 
-                <button type="submit" className="bg-blue-800 text-[20px] text-white border-2 rounded-2xl  md:ml-[45%] ml-[30%] px-20 py-6 ">Submit</button>
+                <button type="submit" className="mx-auto mb-6 block rounded-xl border-2 bg-blue-800 px-6 py-3 text-base text-white hover:bg-blue-900 sm:text-lg">Submit</button>
             </div>
         </div>
     </form>
